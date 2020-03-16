@@ -1,0 +1,134 @@
+h2.combiner{
+	font-size: 2.083333333333333rem;
+	text-transform: uppercase;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: $font_b;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	position: relative;
+
+	
+	span{
+		font-size: inherit;
+		color:$dark;
+		font-family: inherit;
+		font-weight: bold;
+		background-color: #fff;
+		padding-left: 2%;
+		padding-right: 2%;
+
+		&.white{
+      color:$white;
+      background-color: transparent;
+		}
+
+		
+		&.grad{
+			@include grad;
+		}
+	}
+
+	&:before{
+			content:'';
+			width: 20rem;
+			height: 3rem;
+			display: block;
+			position: absolute;
+			background: transparent url(../img/border.png) center no-repeat;
+			background-size: 100%;
+
+			@media (max-width: 640px){
+				background: transparent;
+			}
+	}
+}
+
+.list{
+  h2.combiner{
+    &:before{
+			content:'';
+			width: 23rem;
+			height: 5rem;
+			display: block;
+			position: absolute;
+			background: transparent url(../img/border-list.png) center no-repeat;
+			background-size: 100%;
+
+			@media (max-width: 640px){
+				background: transparent;
+			}
+	  }
+  }
+}
+
+.support{
+  h2.combiner{
+		transform: translateY(25%);
+
+    &:before{
+			content:'';
+			width: 24rem;
+			height: 6rem;
+			display: block;
+			position: absolute;
+			background: transparent url(../img/border-sup.png) center no-repeat;
+			background-size: 100%;
+
+			@media (max-width: 640px){
+				background: transparent;
+			}
+	  }
+  }
+}
+
+.sessions{
+	h2.combiner{
+		
+		span{
+			background-color: transparent;
+		}
+
+    &:before{
+			content:'';
+			width: 24rem;
+			height: 6rem;
+			display: block;
+			position: absolute;
+			background: transparent url(../img/border-session.png) center no-repeat;
+			background-size: 100%;
+
+			@media (max-width: 640px){
+				background: transparent;
+			}
+	  }
+  }
+}
+
+.prices{
+
+	h2.combiner{
+		
+		span{
+			background-color: transparent;
+		}
+
+    &:before{
+			content:'';
+			width: 24rem;
+			height: 6rem;
+			display: block;
+			position: absolute;
+			background: transparent url(../img/border-prices.png) center no-repeat;
+			background-size: 100%;
+
+			@media (max-width: 640px){
+				background: transparent;
+			}
+	  }
+  }
+}

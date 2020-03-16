@@ -1,0 +1,29 @@
+$font:'PT Sans';
+$font_b:'Bebas Neue';
+
+
+//==============================================================================================
+//================COLORS========================================================================
+//==============================================================================================
+
+$grad:linear-gradient( to left, rgb(249,126,93) 0%, rgb(249,205,79) 100%);
+$grad_top:linear-gradient( to top, rgb(249,126,93) 0%, rgb(249,205,79) 100%);
+$dark:#000;
+$white:#fff;
+$blue:#52b4ee;
+$yellow:#e89a13;
+$dark_blue:#374762;
+$blue_light:#edf9fd;
+
+$f_22:1.145833333333333rem;
+$f_18:0.9375rem;
+ 
+@mixin grad{
+  background-image: $grad;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: 640px){
+    font-weight: bold;
+  }
+}
